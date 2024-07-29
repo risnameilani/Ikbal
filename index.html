@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Iqbal</h2>
+    <p>Haloo guysssss.</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <div class="profile-container">
+        <img src="foto.jpg" alt="Deskripsi foto" class="profile-container"width ="200" height="250">
+        <div class="profile-text">
+          <p><strong><br>NAMA    :</strong>Ikbal Awal</p>
+          <p><strong>NIM    :</strong>16323037</p>
+          <p><strong>JURUSAN    :</strong>Manajemen Informatika</p>
+          <p><strong>HOBI    :</strong>Main futsal</p>
+        </div>
+  
+      </div>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="Lagu.mp3"></audio>
+    <video controls autoplay src="ketuakelas.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang</h2>
+    <p>Perkenalkan nama saya Ikbal Awal biasanya orang orang memanggil saya ikbal,bhallo,pane.
+        Saya berasal dari banda, Maluku tengah. Saya anak kedua dari 3 bersaudara, saya lahir di Banda pada tanggal 16 januari 2004
+        Hobi saya yaitu bermain futsal
+    </p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, natus ex! Minus ex dolores nisi consequuntur tempore perspiciatis libero ea ipsa vitae soluta? Unde sint laboriosam quisquam dolorem corrupti voluptatem?.</p>
+  </section>
+
+  <footer>
+    <p>&copy;Iqbal Awal</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
